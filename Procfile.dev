@@ -1,0 +1,4 @@
+web: RAILS_ENV=development bundle exec rails s -b 0.0.0.0
+webpacker: RAILS_ENV=development NODE_ENV=development ./bin/webpack-dev-server
+worker: env TERM_CHILD=1 QUEUE=* bundle exec rake resque:work
+scheduler: bundle exec rake resque:scheduler

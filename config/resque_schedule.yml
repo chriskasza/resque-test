@@ -1,0 +1,6 @@
+do_report_job:
+  # cron: "0 5 * * *"
+  every: 10s
+  class: "ReportJob"
+  queue: report_queue
+  description: Runs the perform method in ReportJob
